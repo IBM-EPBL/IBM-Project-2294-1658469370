@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>NYC BIKE SHARING SYSTEM ANALYSIS</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h5>Home Page</h5>
+            </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="visualization.html">Visualization</a></li>
+                <li><a href="story.html">Story</a></li>
+            </ul>
+            <div class="bar">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="banner">
+        <div class="wrapper">
+            <div class="content">
+                <h2>Visualization Charts for the NYC Bike Sharing System</h2>
+                <p> What are the uses of visualization techniques?<br>
+Image result for uses of visualization charts
+Data visualization is a graphical representation of information and data.<br> By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand <br> * trends<br>* outliers<br>* patterns in data.<br>
+    Dashboards are built to provide quick insights into some of the most important business processes. <br>Dashboards work best if the information they contain is to the point and instantly visible. <br>The dashboard-building process begins with determining its purpose and key performance indicators involved.</p>
+                <div class="btn">
+                    <a href="home.html">Home</a>
+                   
+                </div>    
+                <br>
+                <br>
+<img src="vs1.png" alt="vschart1" width="1000" height="1500" style="align-items: ;center">
+<img src="vs2.png" alt="vschart2" width="1000" height="1500" style="align-items: ;center">
+<img src="vs3.png" alt="vschart3" width="1000" height="1500" style="align-items: ;center">
+<br>
+<br>
+<br>
+                 <div class="row">
+  <div class="column">
+    <img src="homeimage1.png" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="homeimage2.png" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="homeimage3.png" alt="" style="width:100%">
+  </div>
+</div>               
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        const X = () => {
+            const menu = document.querySelector('.bar');
+            const nav = document.querySelector('.menu');
+            
+            menu.addEventListener('click', () => {
+               menu.classList.toggle('bar-active');
+                nav.classList.toggle('nav-active');
+            });
+        }
+        X();
+    </script>
+</body>
+</html>

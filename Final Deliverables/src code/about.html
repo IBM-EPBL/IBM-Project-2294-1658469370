@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>NYC BIKE SHARING SYSTEM ANALYSIS</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h5>About Page</h5>
+            </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+            <div class="bar">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="banner">
+        <div class="wrapper">
+            <div class="content">
+                <h2>About the New York City's Bike Sharing System</h2>
+                <p> Many bike share systems make available their trip data for those who want to understand how their systems are used. <br>The bike share system in New York City, Citi Bike, is one of them, but they don’t provide much more than the data.<br> I’ve got some experience in obtaining and preparing their data for visualization, so in this article I will show you how to get started with this rich data source.<br>
+                    In the Before Times I commuted from suburban New Jersey to my job as a Product Manager in New York City at an office, now shuttered, above Penn Station. <br>To get around in the City at lunch or after work I often relied on Citi Bike, New York’s bike share system. I found I could get to destinations in midtown and even further afield faster than walking and cheaper than the bus or subway.<br> When I discovered that Citi Bike made trip data publicly available I thought that it might provide an interesting use case for the data preparation product that I managed.<br>
+
+Using real data turned out to be much more interesting then the sample files that we had been using because there were actual anomalies that needed to be cleaned up to make the data useful for analysis, and there were interesting stories to tell from the data.<br>
+This web page tells about the uses and the analysis made on the bike sharing system data using,<br>
+* Dashboard Created<br>
+* Visualization charts created<br>
+* Story created<br>
+* Prediction of the Most Common User Type<br></p>
+                <div class="btn">
+                    <a href="home.html">Home</a>
+                   
+                </div>    
+                <br>
+                <br>
+
+                 <div class="row">
+  <div class="column">
+    <img src="homeimage1.png" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="homeimage2.png" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="homeimage3.png" alt="" style="width:100%">
+  </div>
+</div>               
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        const X = () => {
+            const menu = document.querySelector('.bar');
+            const nav = document.querySelector('.menu');
+            
+            menu.addEventListener('click', () => {
+               menu.classList.toggle('bar-active');
+                nav.classList.toggle('nav-active');
+            });
+        }
+        X();
+    </script>
+</body>
+</html>

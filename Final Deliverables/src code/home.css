@@ -1,0 +1,191 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+nav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 10vh;
+	background: blueviolet;
+}
+.logo {
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 24px;
+	cursor: pointer;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+.logo span {
+	color: deepskyblue;
+}
+.menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+}
+.menu li {
+	list-style: none;
+}
+.menu a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 30px;
+	font-weight: 600;
+	transition: .9s;
+}
+.menu a:hover {
+	letter-spacing: 2px;
+}
+.bar {
+	display: none;
+	cursor: pointer;
+}
+.bar div {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	margin: 5px;
+	transition: all .5s ease;
+}
+@media screen and (max-width:1024px) {
+	.menu {
+		width: 60%;
+	}
+}
+@media screen and (max-width:768px) {
+	body {
+		overflow-x: hidden;
+	}
+	.menu {
+		position: absolute;
+		right: -100%;
+		height: 90vh;
+		top: 10vh;
+		background-color: #000;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in-out;
+	}
+	.bar {
+		display: block;
+	}
+}
+.nav-active {
+	transform: translateX(-100%);
+}
+.bar-active .bar-1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.bar-active .bar-2 {
+	opacity: 0;
+}
+.bar-active .bar-3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+.banner {
+	background-image: url(3.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+.content h2 {
+	font-family: alfa slab one;
+	color: blueviolet;
+	font-size: 60px;
+}
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.content p {
+	width: 50%;
+	color: rgba(0, 0, 0, 0.6);
+	line-height: 2;
+}
+.btn a {
+	text-decoration: none;
+	background: blueviolet;
+	padding: 15px 10px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+	border-radius: 50px;
+	width: 130px;
+	text-align: center;
+}
+.wrapper {
+	width: 1060px;
+	margin: auto;
+	padding-top: 12%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.wrapper {
+		width: 75%;
+		padding-top: 26%;
+	}
+	.content {
+		text-align: center;
+	}
+	.content h2 {
+		font-size: 60px;
+	}
+	.content p {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 767px) {
+	.banner {
+		background-position: 60%;
+	}
+	.wrapper {
+		width: 75%;
+		padding-top: 26%;
+	}
+	.content h2 {
+		font-size: 25px;
+	}
+	.content p {
+		width: 100%;
+	}
+	.btn a {
+		padding: 9px 4px;
+		width: 105px;
+	}
+}

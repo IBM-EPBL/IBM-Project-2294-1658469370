@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>NYC BIKE SHARING SYSTEM ANALYSIS</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h5>Home Page</h5>
+            </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="visualization.html">Visualization</a></li>
+                <li><a href="story.html">Story</a></li>
+            </ul>
+            <div class="bar">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="banner">
+        <div class="wrapper">
+            <div class="content">
+                <h2>Prediction of the Most Common User Type of the NYC Bike Sharing System</h2>
+                <p>We have made analysis on the combination of one year datasets and predicted the most common user type of the NYC Bike Sharing System using Decision Tree Classifier. <br>The accuracy got is 99.99%<br>
+                    The python code link is : <a href="https://colab.research.google.com/drive/11i8MZk2b9KYrl1wWqtKqIyG7d01DHOiN">source code</a></p>
+                <div class="btn">
+                    <a href="home.html">Home</a>
+                   
+                </div>    
+                <br>
+                <br>
+<br>
+<br>
+<br>
+                 <div class="row">
+  <div class="column">
+    <img src="homeimage1.png" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="homeimage2.png" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="homeimage3.png" alt="" style="width:100%">
+  </div>
+</div>               
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        const X = () => {
+            const menu = document.querySelector('.bar');
+            const nav = document.querySelector('.menu');
+            
+            menu.addEventListener('click', () => {
+               menu.classList.toggle('bar-active');
+                nav.classList.toggle('nav-active');
+            });
+        }
+        X();
+    </script>
+</body>
+</html>

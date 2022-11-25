@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>NYC BIKE SHARING SYSTEM ANALYSIS</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h5>Home Page</h5>
+            </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="check1.html">Dashboard</a></li>
+                <li><a href="check2.html">Visualization</a></li>
+                <li><a href="check3.html">Story</a></li>
+                <li><a href="check4.html">Prediction</a></li>
+            </ul>
+            <div class="bar">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="banner">
+        <div class="wrapper">
+            <div class="content">
+                <h2>Analysis on NYC Bike Sharing System</h2>
+                <p> People live in New York City (NYC) and wanted to understand how Citibike, NYC's bike sharing system, is used as a commuting service.</p>
+                <div class="btn">
+                    <a href="about.html">Learn More</a>
+                    <a href="index.html">Sign up</a>
+                    <a href="login.html">Sign In</a>
+                </div>    
+                <br>
+                <br>
+
+                 <div class="row">
+  <div class="column">
+    <img src="homeimage1.png" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="homeimage2.png" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="homeimage3.png" alt="" style="width:100%">
+  </div>
+</div>               
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        const X = () => {
+            const menu = document.querySelector('.bar');
+            const nav = document.querySelector('.menu');
+            
+            menu.addEventListener('click', () => {
+               menu.classList.toggle('bar-active');
+                nav.classList.toggle('nav-active');
+            });
+        }
+        X();
+    </script>
+</body>
+</html>
